@@ -26,19 +26,19 @@ experimentation, and evaluation benchmarking.
 The guardrail pipeline follows a layered safety architecture:
 
 User Input\
-↓\
+↓
 1. Rule-Based Filter\
-↓\
+↓
 2. LLM Safety Classification\
-↓\
+↓
 3. Optional RAG Context Injection\
-↓\
+↓
 4. Controlled Qwen Generation (Ollama)\
-↓\
+↓
 5. Output Verification (Embedding Similarity)\
-↓\
+↓
 6. Optional Fact Check\
-↓\
+↓
 Final Decision (Allow / Refuse / Review)
 
 Core implementation: `guardrails/qwen_guardrail_system.py`
